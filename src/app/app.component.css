@@ -1,0 +1,12 @@
+.title {
+  font-size: 24px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: auto;
+}

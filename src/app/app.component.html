@@ -1,0 +1,4 @@
+<div class="title">{{ title }}</div>
+<div class="card-container">
+  <app-card *ngFor="let card of cards" [card]="card" (clickCard)="onClickCard($event)"></app-card>
+</div>
