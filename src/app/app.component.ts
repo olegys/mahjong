@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
     this.fillCardsArray();
   }
 
-  private fillCardsArray(): void {
+  public fillCardsArray(): void {
     this.cards = [];
     const uniqNumbers: number[] = this._appService.getUniqArray(this.size, this.min, this.max);
     const resultNumbers: number[] = [...uniqNumbers, ...this._appService.getShuffleArray(uniqNumbers)];
