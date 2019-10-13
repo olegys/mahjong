@@ -14,10 +14,10 @@ export interface ICard {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardComponent {
-  @Input() card: ICard = null;
+  @Input() card: ICard = {} as ICard;
 
   @Output() clickCard: EventEmitter<ICard> = new EventEmitter();
-  
+
   @HostListener('click') onClick(): void {
     this.clickCard.emit({ ...this.card });
   }
