@@ -1,7 +1,9 @@
 .title {
   font-size: 24px;
   text-align: center;
-  margin: 50px 0;
+  margin: 40px 0;
+  text-shadow: 2px 2px 2px #b7b7b7;
+  user-select: none;
 }
 
 .card-container {
@@ -9,4 +11,25 @@
   flex-wrap: wrap;
   width: 600px;
   margin: auto;
+}
+
+.reload-btn {
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  background-color: #2ecc71;
+  color: #ffffff;
+  transition: background-color 0.3s;
+  border: none;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.reload-btn:hover {
+  background-color: #27ae60;
 }
